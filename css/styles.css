@@ -1,0 +1,217 @@
+:root {
+    --main-title-color: #ffffff;
+    --second-title-color: #303030;
+    --second-text-color: rgba(157, 164, 189, 0.6);
+    --main-text-color: #555555;
+    --accent-color: #ff6c00;
+    --main-btn-color: #ffffff;
+    --header-text-color: #ffffff;
+    --third-text-color: #9da4bd;
+}
+
+body {
+    font-family: 'Open sans', sans-serif;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.header-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--header-text-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
+}
+
+.header-tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--header-text-color);
+}
+
+.header-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.9em;
+    text-transform: uppercase;
+    color: var(--main-btn-color);
+    cursor: pointer;
+}
+
+/**---------------------hero----------------------**/
+
+.social-item {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--second-title-color);
+}
+
+.social-item:focus,
+.social-item:hover {
+    color: var(--accent-color);
+}
+
+.hero {
+    background-color: #000;
+}
+
+.hero-pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--second-text-color);
+}
+
+.hero-title {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: var(--main-title-color);
+}
+
+.hero-after-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--third-text-color);
+}
+
+/**------------------О НАС-----------------**/
+
+.pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--second-title-color);
+}
+.section-title {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--second-title-color);
+}
+
+.section-after-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+}
+
+.section-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+}
+
+/*--------------------Услуги и цены--------------------*/
+
+.pre-title.black {
+    color: var(--second-text-color);
+}
+.section-title.black {
+    color: var(--main-title-color);
+}
+.price-item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--third-text-color);
+}
+
+/*--------------Почему к нам?-------------*/
+.list-number {
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--second-title-color);
+}
+.list-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--second-title-color);
+}
+
+/*-------------------Наши мастера---------------*/
+
+.master {
+    color: var(--second-title-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+.prof {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+/*---------------Контакты--------------------*/
+
+.contact-item {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    color: var(--third-text-color);
+}
+
+.work-time {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+}
+
+/*------------------------Footer-----------------------*/
+.footer-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--third-text-color);
+}
