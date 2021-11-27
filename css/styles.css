@@ -46,9 +46,26 @@ li,
 
 .link {
     text-decoration: none;
+    transition: color 400ms linear, background-color 400ms linear;
 }
+/* .current::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--accent-color);
+    bottom: -48px;
+    left: 0;
+} */
 
 /*---------------Header---------*/
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 .header-container {
     display: flex;
     align-items: center;
@@ -59,6 +76,7 @@ li,
     align-items: center;
 }
 .header-menu {
+    position: relative;
     display: flex;
     align-items: center;
     margin-right: 40px;
@@ -88,6 +106,7 @@ li,
 
 .header-logo-icon {
     fill: currentColor;
+    transition: color 300ms linear;
 }
 .header-logo:hover {
     color: var(--accent-color);
@@ -118,6 +137,7 @@ li,
     border: 1px solid var(--accent-color);
     border-radius: 25px;
     background-color: transparent;
+    transition: color 400ms linear, background-color 400ms linear;
 }
 
 .btn-black {
@@ -138,9 +158,28 @@ li,
 .hero-container {
     display: flex;
 }
-.hero-list {
+
+.hero-left {
     display: flex;
     width: 93px;
+    align-items: flex-end;
+    padding-left: 23px;
+    padding-bottom: 40px;
+}
+.hero-list::before {
+    content: '';
+    height: 1px;
+    width: 60px;
+    display: block;
+    background-color: #303030;
+    margin-right: 40px;
+}
+
+.hero-list {
+    display: flex;
+    transform: rotate(-90deg) translateX(-19px);
+    transform-origin: top left;
+    align-items: center;
 }
 .hero-right {
     flex-grow: 1;
@@ -164,6 +203,9 @@ li,
     background-color: #303030;
     margin-right: 20px;
 }
+.left-item + .left-item {
+    margin-left: 40px;
+}
 
 .pre-title.black::before {
     background-color: rgba(157, 164, 189, 0.6);
@@ -176,6 +218,7 @@ li,
     line-height: 1.36;
     letter-spacing: 0.2em;
     color: var(--second-title-color);
+    transition: color 400ms linear, background-color 400ms linear;
 }
 
 .social-item:focus,
@@ -464,9 +507,11 @@ li,
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: fill 400ms linear, background-color 400ms linear;
 }
 .masters-social-icon {
     fill: var(--second-title-color);
+    transition: fill 300ms linear;
 }
 .master-social-link:hover,
 .master-social-link:focus {
@@ -563,7 +608,16 @@ li,
 .list-social {
     margin-left: auto;
     display: flex;
+    align-items: center;
 }
 .footer-link {
     margin-left: 40px;
+}
+.list-social::before {
+    content: '';
+    height: 1px;
+    width: 60px;
+    display: block;
+    background-color: #303030;
+    margin-right: 40px;
 }
